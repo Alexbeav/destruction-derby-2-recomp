@@ -1,0 +1,46 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Destruction Derby 2",
+    "id": "SCUS-94350",
+    "boot_exe": "SCUS_943.50"
+  },
+  "marketing": {
+    "description": "A native recompilation setup host for Destruction Derby 2.",
+    "publisher": "",
+    "year": "",
+    "region": "USA",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "disc1.cue",
+    "bin_name": "disc1.bin",
+    "track_counts": [
+      19
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 650586720,
+      "md5": "cd25507707a6d157763c6fddbdbf51df",
+      "sha1": "21352c9271aa9a554e99055e4ec688fa665c40f1",
+      "crc32": "42f7153c"
+    },
+    "disc_fp": "1438376f30d9b3914265bcf79991434d5101a30a196b064c6e72ff970e3a2b4e"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x800696E8",
+    "text_size": "0x0006A000",
+    "stack_base": "0x801FFFF0"
+  },
+  "seeds": {
+    "count": 551,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}

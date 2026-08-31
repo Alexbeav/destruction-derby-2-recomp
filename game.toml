@@ -1,0 +1,53 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "Destruction Derby 2"
+id = "SCUS-94350"
+players = 1
+exe = "disc/SCUS_943.50"
+disc = ""
+load_address = "0x80010000"
+entry_pc = "0x800696E8"
+text_size = "0x0006A000"
+stack_base = "0x801FFFF0"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "disc1.bin"
+cue_name = "disc1.cue"
+boot_exe = "SCUS_943.50"
+known_sizes = [650586720]
+known_md5 = [
+  "cd25507707a6d157763c6fddbdbf51df",
+]
+known_sha1 = [
+  "21352c9271aa9a554e99055e4ec688fa665c40f1",
+]
+known_crc32 = [
+  "42f7153c",
+]
+
+[recompiler]
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "destruction-derby-2- Recompiled"
+memcard_dir = "saves"
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 19
+required_disc_fp = "1438376f30d9b3914265bcf79991434d5101a30a196b064c6e72ff970e3a2b4e"

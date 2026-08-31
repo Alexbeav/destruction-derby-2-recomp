@@ -1,0 +1,35 @@
+[project]
+title = "Destruction Derby 2"
+slug = "destruction-derby-2-recomp"
+region = "USA NTSC-U"
+revision = "SCUS-94350"
+track = "recompilation"
+intended_audience = "research"
+commercial_use_possible = false
+
+[retail_identity]
+disc_count = 1
+serials = ["SCUS-94350"]
+boot_executable = "SCUS_943.50"
+executable_sha256 = "cb34828b7df9e9fac0df965a61335c40058ea26493a37f988769a66ecb3bc957"
+load_address = "0x80010000"
+entry_point = "0x800696E8"
+stack_base = "0x801FFFF0"
+
+[framework]
+repository = "https://github.com/Alexbeav/psxrecomp.git"
+commit = "d60f5947e554702a45d84abd789f2f06405c6b97"
+tree = "3590a3ee4021049f28f970ba837b2cc6e3fc7b3d"
+recomp_ui_commit = "4eda65430a431e5685ae0c515ebcd912c7843bff"
+license = "PolyForm Noncommercial 1.0.0"
+
+[studio]
+repository = "https://github.com/TechnicallyComputers/retcomm-studio"
+commit = "249422969c1c59ac2a1f8aa2299e876a7133998e"
+
+[release]
+version = "0.3.0"
+platform = "windows-x64"
+graduation_state = "candidate"
+private_gameplay_confirmed = true
+public_package_status = "not_built"
