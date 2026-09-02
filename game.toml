@@ -18,15 +18,18 @@ out_dir = "disc"
 bin_name = "disc1.bin"
 cue_name = "disc1.cue"
 boot_exe = "SCUS_943.50"
-known_sizes = [650586720]
+known_sizes = [650586720, 73330656]
 known_md5 = [
   "cd25507707a6d157763c6fddbdbf51df",
+  "c8e98530e2b1ddcf54e1ac2326ae8127",
 ]
 known_sha1 = [
   "21352c9271aa9a554e99055e4ec688fa665c40f1",
+  "d52c60282b7ae07639b8fd61b0ab8d35b28a3327",
 ]
 known_crc32 = [
   "42f7153c",
+  "23d75612",
 ]
 
 [recompiler]
